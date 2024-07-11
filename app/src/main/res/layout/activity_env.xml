@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".environment.EnvActivity">
+
+    <TextView
+        android:id="@+id/bluetooth_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Bluetooth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_tx" />
+
+    <Button
+        android:id="@+id/bluetooth_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Eable"
+        app:layout_constraintBottom_toBottomOf="@+id/bluetooth_tx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bluetooth_tx" />
+
+    <TextView
+        android:id="@+id/location_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Location"
+        app:layout_constraintStart_toStartOf="@+id/bluetooth_tx"
+        app:layout_constraintTop_toBottomOf="@+id/bluetooth_tx" />
+
+    <Button
+        android:id="@+id/location_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable"
+        app:layout_constraintBottom_toBottomOf="@+id/location_tx"
+        app:layout_constraintEnd_toEndOf="@+id/bluetooth_btn"
+        app:layout_constraintTop_toTopOf="@+id/location_tx" />
+
+    <TextView
+        android:id="@+id/bluetooth_scan_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Bluetooth Scan Permission"
+        app:layout_constraintStart_toStartOf="@+id/location_tx"
+        app:layout_constraintTop_toBottomOf="@+id/location_tx" />
+
+    <Button
+        android:id="@+id/scan_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="grant"
+        app:layout_constraintBottom_toBottomOf="@+id/bluetooth_scan_tx"
+        app:layout_constraintEnd_toEndOf="@+id/location_btn"
+        app:layout_constraintTop_toTopOf="@+id/bluetooth_scan_tx" />
+
+    <TextView
+        android:id="@+id/bluetooth_connect_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Bluetooth Connect Permission"
+        app:layout_constraintStart_toStartOf="@+id/bluetooth_scan_tx"
+        app:layout_constraintTop_toBottomOf="@+id/bluetooth_scan_tx" />
+
+    <Button
+        android:id="@+id/connect_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="grant"
+        app:layout_constraintBottom_toBottomOf="@+id/bluetooth_connect_tx"
+        app:layout_constraintEnd_toEndOf="@+id/scan_btn"
+        app:layout_constraintTop_toTopOf="@+id/bluetooth_connect_tx" />
+
+    <TextView
+        android:id="@+id/location_permission_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Location Permission"
+        app:layout_constraintStart_toStartOf="@+id/bluetooth_connect_tx"
+        app:layout_constraintTop_toBottomOf="@+id/bluetooth_connect_tx" />
+
+    <Button
+        android:id="@+id/location_permission_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="grant"
+        app:layout_constraintBottom_toBottomOf="@+id/location_permission_tx"
+        app:layout_constraintEnd_toEndOf="@+id/connect_btn"
+        app:layout_constraintTop_toTopOf="@+id/location_permission_tx" />
+
+    <Button
+        android:id="@+id/ready_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:enabled="false"
+        android:text="all ready \n return"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_permission_tx" />
+
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/title_tx"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Necessary functions and permissions of Bluetooth"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
