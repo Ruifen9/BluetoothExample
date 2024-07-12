@@ -68,7 +68,6 @@ public class EnvActivity extends AppCompatActivity {
 
         binding.readyBtn.setOnClickListener(v -> EnvActivity.this.finish());
 
-
         // try enable bluetooth
         binding.bluetoothBtn.setOnClickListener(v -> launcher.launch(new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE)));
         // go to settings page Granting permissions

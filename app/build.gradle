@@ -40,5 +40,8 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
-    implementation 'com.gitee.bluexmicro:Android-OTA-Library:1.0.9'
+
+    implementation 'no.nordicsemi.android:ble:2.7.5'
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.8.3'
+    implementation 'no.nordicsemi.android.support.v18:scanner:1.6.0'
 }
